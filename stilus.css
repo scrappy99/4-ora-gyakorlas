@@ -1,0 +1,55 @@
+/*a-ra pakolt pszeudo-elemek: link,visited hover, active */
+
+a:link {
+  /*  text-decoration: line-through; */
+    color: red;
+}
+
+a:visited {
+    text-decoration: line-through;
+    color: dodgerblue;
+}
+
+a:hover {
+    text-decoration: overline;
+    color: mediumspringgreen;
+}
+a:active {
+    text-decoration: none;
+    color: yellow;
+}
+table, th, td {
+    border:  2px solid dodgerblue;
+
+}
+ table {
+    /* határolo vonalak összeropantása */
+   /* border-collapse: collapse; */
+    /* határolo vonalak eltávolitása ha nincs border-collapse*/
+    border-spacing: 20px; 
+    /* üres cella elemek elrejtése */
+    empty-cells: hide;
+} 
+th, td {
+    padding: 20px;
+}
+/* páratlan elemek hátér szine */
+/* tr:nth-child(odd) {
+   background-color: lightgreen; 
+} */
+/* sorra rá huzzom az egeret, lebegtetem felete */
+/* tr:hover {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 2em;
+} */
+
+caption{
+    margin: 20px 0;
+    text-decoration: underline dashed red;
+}
+ul{
+    /* lista elem jelölö megváltoztatása: disc circle square none */
+    /* list-style-type: disc; */
+    list-style-image: url(./images/sqpurple.gif)
+}
